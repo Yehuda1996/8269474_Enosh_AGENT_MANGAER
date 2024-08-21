@@ -2,7 +2,7 @@
 
 namespace AgentsRest.Models
 {
-    public enum Status
+    public enum AgentStatus
     {
         Active,
         Inactive
@@ -11,9 +11,9 @@ namespace AgentsRest.Models
     {
         public int Id { get; set; }
         public string Nickname { get; set; }
-        public int X { get; set; }
-        public int Y { get; set; }
-        public Status Status { get; set; }
+        public int Coordinate_x { get; set; }
+        public int Coordinate_y { get; set; }
+        public AgentStatus Status { get; set; }
         public string Image { get; set; }
     }
 }

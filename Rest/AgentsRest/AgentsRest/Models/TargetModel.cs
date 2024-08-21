@@ -1,17 +1,18 @@
 ﻿namespace AgentsRest.Models
 {
-    public enum Status
+    public enum TargetStatus
     {
-        Dead,
-        Alive
+        Alive,
+        Eliminated
     }
     public class TargetModel
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public string Role { get; set; }
-        public int X { get; set; }
-        public int Y { get; set; }
-        public Status Status { get; set; }
+        public string Position { get; set; }
+        public int Coordinate_x { get; set; }
+        public int Coordinate_y { get; set; }
+        public TargetStatus Status { get; set; }
+        public string Image { get; set; }
     }
 }
