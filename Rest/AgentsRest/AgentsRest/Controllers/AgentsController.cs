@@ -5,11 +5,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AgentsRest.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
-    public class AgentController(IAgentService agentService) : ControllerBase
+    public class AgentsController(IAgentService agentService) : ControllerBase
     {
-        [HttpPost("create")]
+        [HttpPost]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult<int>> CreateAgent(AgentDto agentDto)

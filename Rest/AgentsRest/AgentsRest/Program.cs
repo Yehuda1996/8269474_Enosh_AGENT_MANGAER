@@ -19,6 +19,7 @@ namespace AgentsRest
             builder.Services.AddDbContext<ApplicationDbContext>();
             builder.Services.AddScoped<IAgentService, AgentService>();
             builder.Services.AddScoped<ITargetService, TargetService>();
+            builder.Services.AddScoped<IMissionService, MissionService>();
 
             var app = builder.Build();
 

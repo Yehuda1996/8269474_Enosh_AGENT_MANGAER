@@ -13,7 +13,7 @@ namespace AgentsRest.Services
             AgentModel newAgent = new()
             {
                 Nickname = agent.Nickname,
-                Image = agent.Photo_Url
+                Image = agent.PhotoUrl
             };
             await context.Agents.AddAsync(newAgent);
             await context.SaveChangesAsync();

@@ -13,7 +13,7 @@ namespace AgentsRest.Services
             {
                 Name = target.Name,
                 Position = target.Position,
-                Image = target.Photo_Url,
+                Image = target.PhotoUrl,
             };
             await context.Targets.AddAsync(newTarget);
             await context.SaveChangesAsync();

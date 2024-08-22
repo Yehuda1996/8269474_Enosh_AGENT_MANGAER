@@ -4,7 +4,7 @@ namespace AgentsRest.Models
 {
     public enum MissionStatus
     {
-        Suggested,
+        Proposed,
         Assigned,
         Completed
     }

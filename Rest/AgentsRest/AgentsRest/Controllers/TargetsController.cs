@@ -5,11 +5,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AgentsRest.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
-    public class TargetController(ITargetService targetService) : ControllerBase
+    public class TargetsController(ITargetService targetService) : ControllerBase
     {
-        [HttpPost("create")]
+        [HttpPost]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult<int>> CreateAgent(TargetDto targetDto)
@@ -31,7 +31,7 @@ namespace AgentsRest.Controllers
         public async Task<ActionResult> GetTarget(int id) =>
             Ok(await targetService.GetTargetByIdAsync(id));
 
-        [HttpPut("target/{id}/pin")]
+        [HttpPut("{id}/pin")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult> PutInitialCoordinatesForTarget(int id, CoordinatesDto coordinatesDto)
