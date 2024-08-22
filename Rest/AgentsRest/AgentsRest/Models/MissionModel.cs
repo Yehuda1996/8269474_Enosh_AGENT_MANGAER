@@ -4,8 +4,8 @@ namespace AgentsRest.Models
 {
     public enum MissionStatus
     {
-        Suggest,
-        PermissionGranted,
+        Suggested,
+        Assigned,
         Completed
     }
     public class MissionModel
@@ -15,7 +15,7 @@ namespace AgentsRest.Models
         public int AgentId { get; set; }
         public TargetModel Target { get; set; }
         public int TargetId { get; set; }
-        public DateTime TimeTillCompletion { get; set; }
+        public double TimeTillCompletion { get; set; }
         public DateTime TimeOfMission { get; set; }
         public MissionStatus Status { get; set; } 
     }

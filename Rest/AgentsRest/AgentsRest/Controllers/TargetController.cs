@@ -17,7 +17,7 @@ namespace AgentsRest.Controllers
             try
             {
                 var newTarget = await targetService.CreateTargetAsync(targetDto);
-                return Ok(newTarget.Id);
+                return Ok($"Id : {newTarget.Id}");
             }
             catch (Exception ex)
             {
@@ -25,10 +25,42 @@ namespace AgentsRest.Controllers
             }
         }
 
-        [HttpGet]
+        [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult> GetTarget(int id) =>
             Ok(await targetService.GetTargetByIdAsync(id));
+
+        [HttpPut("target/{id}/pin")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<ActionResult> PutInitialCoordinatesForTarget(int id, CoordinatesDto coordinatesDto)
+        {
+            try
+            {
+                await targetService.StartingCoordinatesForTargetByIdAsync(id, coordinatesDto);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpPut("{id}/move")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<ActionResult> MoveTarget(int id, MoveDto moveDto)
+        {
+            try
+            {
+                await targetService.MoveTargetById(id, moveDto);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }

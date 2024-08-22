@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AgentsRest.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240821130139_InitialCreate")]
+    [Migration("20240822063926_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -45,10 +45,12 @@ namespace AgentsRest.Migrations
 
                     b.Property<string>("Nickname")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
-                    b.Property<int>("Status")
-                        .HasColumnType("int");
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -75,8 +77,8 @@ namespace AgentsRest.Migrations
                     b.Property<DateTime>("TimeOfMission")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("TimeTillCompletion")
-                        .HasColumnType("datetime2");
+                    b.Property<double>("TimeTillCompletion")
+                        .HasColumnType("float");
 
                     b.HasKey("Id");
 
@@ -101,16 +103,23 @@ namespace AgentsRest.Migrations
                     b.Property<int>("Coordinate_y")
                         .HasColumnType("int");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("Image")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("Position")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
-                    b.Property<int>("Status")
-                        .HasColumnType("int");
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -120,7 +129,7 @@ namespace AgentsRest.Migrations
             modelBuilder.Entity("AgentsRest.Models.MissionModel", b =>
                 {
                     b.HasOne("AgentsRest.Models.AgentModel", "Agent")
-                        .WithMany()
+                        .WithMany("Missions")
                         .HasForeignKey("AgentId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
@@ -134,6 +143,11 @@ namespace AgentsRest.Migrations
                     b.Navigation("Agent");
 
                     b.Navigation("Target");
+                });
+
+            modelBuilder.Entity("AgentsRest.Models.AgentModel", b =>
+                {
+                    b.Navigation("Missions");
                 });
 #pragma warning restore 612, 618
         }
