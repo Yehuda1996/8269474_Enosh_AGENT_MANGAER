@@ -8,8 +8,9 @@ namespace AgentsRest.Services
         public Task<MissionModel> CreateMissionAsync(MissionDto missionDto, AgentModel agentModel, TargetModel targetModel);
         public Task<List<MissionModel>> GetAllMissionsAsync();
         public Task<MissionModel?> GetMissionById(int id);
-        public Task<MissionModel> UpdateMissionStatus(int id, MissionDto missionDto);
+        public Task<MissionModel> UpdateMissionStatusAsync(int id, MissionModel missionModel);
         public Task<double> CalcDistance(AgentModel agentModel, TargetModel targetModel);
         public Task MoveAgentTowardsTargetAsync(MissionModel missionModel, AgentModel agentModel, TargetModel targetModel, MoveDto moveDto);
+        public Task DeleteMissionByIdAsync(int id);
     }
 }

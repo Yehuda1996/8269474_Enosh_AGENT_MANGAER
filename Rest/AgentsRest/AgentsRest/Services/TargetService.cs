@@ -73,5 +73,12 @@ namespace AgentsRest.Services
             await context.Targets.AddAsync(target);
             await context.SaveChangesAsync();
         }
+
+        public async Task DeleteTargetByIdAsync(int id)
+        {
+            var deleteTarget = await GetTargetByIdAsync(id);
+            await context.Targets.RemoveAsync(deleteTarget);
+            await context.SaveChangesAsync();
+        }
     }
 }

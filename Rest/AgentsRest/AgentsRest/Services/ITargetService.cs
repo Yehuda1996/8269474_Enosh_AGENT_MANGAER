@@ -10,5 +10,6 @@ namespace AgentsRest.Services
         public Task<List<TargetModel>> GetAllTargetsAsync();
         public Task StartingCoordinatesForTargetByIdAsync(int id, CoordinatesDto coordinatesDto);
         public Task MoveTargetById(int id, MoveDto moveDto);
+        public Task DeleteTargetByIdAsync(int id);
     }
 }

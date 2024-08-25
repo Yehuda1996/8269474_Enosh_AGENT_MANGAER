@@ -28,9 +28,14 @@ namespace AgentsRest.Services
 
         public async Task<List<MissionModel>> GetAllMissionsAsync() =>
             await context.Missions.ToListAsync();
-        public async Task<MissionModel> UpdateMissionStatus(int id, MissionDto missionDto)
+        public async Task<MissionModel> UpdateMissionStatusAsync(int id, MissionModel missionModel)
         {
-
+            var statusUpdate =  await missionService.GetMissionById(id);
+            statusUpdate.Status = missionModel.Status;
+            await context.Missions.AddAsync(statusUpdate);
+            await context.SaveChangesAsync();
+            return statusUpdate;
+            
         }
         public async Task<double> CalcDistance(AgentModel agentModel, TargetModel targetModel)
         {
@@ -68,5 +73,11 @@ namespace AgentsRest.Services
             }
         }
 
+        public async Task DeleteMissionByIdAsync(int id)
+        {
+            var deleteMission = await GetMissionById(id);
+            await context.Missions.RemoveAsync(deleteMission);
+            await context.SaveChangesAsync();
+        }
     }
 }

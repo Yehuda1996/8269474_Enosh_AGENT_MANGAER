@@ -70,5 +70,9 @@ namespace AgentsRest.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+        [HttpDelete("{id}")]
+        public async Task<ActionResult> DeleteTarget(int id) =>
+            Ok(await targetService.DeleteTargetByIdAsync(id)); 
     }
 }

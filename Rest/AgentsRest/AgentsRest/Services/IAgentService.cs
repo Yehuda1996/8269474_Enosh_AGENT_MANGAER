@@ -10,5 +10,6 @@ namespace AgentsRest.Services
         public Task<List<AgentModel>> GetAllAgentsAsync();
         public Task StartingCoordinatesForAgentByIdAsync(int id, CoordinatesDto coordinatesDto);
         public Task MoveAgentById(int id, MoveDto moveDto);
+        public Task DeleteAgentByIdAsync(int id);
     }
 }

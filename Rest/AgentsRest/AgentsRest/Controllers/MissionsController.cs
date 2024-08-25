@@ -32,5 +32,13 @@ namespace AgentsRest.Controllers
         public async Task<ActionResult> GetAllMissions() =>
             Ok(await missionService.GetAllMissionsAsync());
 
+        [HttpPut("{id}")]
+        public async Task<ActionResult> UpdateStatus(int id, MissionModel missionModel) =>
+            Ok(await missionService.UpdateMissionStatusAsync(id, missionModel));
+
+        [HttpDelete("{id}")]
+        public async Task<ActionResult> DeleteMission(int id) => 
+            Ok(await missionService.DeleteMissionByIdAsync(id));
+
     }
 }
