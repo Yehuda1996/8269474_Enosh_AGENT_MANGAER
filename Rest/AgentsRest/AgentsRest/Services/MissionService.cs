@@ -23,6 +23,9 @@ namespace AgentsRest.Services
             return null;
         }
 
+        public async Task<MissionModel?> GetMissionById(int id) =>
+            await context.Missions.FirstOrDefaultAsync(x => x.Id == id);
+
         public async Task<List<MissionModel>> GetAllMissionsAsync() =>
             await context.Missions.ToListAsync();
         public async Task<double> CalcDistance(AgentModel agentModel, TargetModel targetModel)
@@ -34,9 +37,11 @@ namespace AgentsRest.Services
 
         public async Task MoveAgentTowardsTarget(MissionModel missionModel, AgentModel agentModel, TargetModel targetModel)
         {
-            while(await  CalcDistance(agentModel, targetModel) < 200)
+            await GetMissionById(missionModel.Id);
+
+            if(await  CalcDistance(agentModel, targetModel) < 200)
             {
-                missionModel.Status = MissionStatus.Assigned;
+                var assigned = missionModel.Status = MissionStatus.Assigned;
                 if (agentModel.Coordinate_x < targetModel.Coordinate_x)
                 {
                     agentModel.Coordinate_x++;
@@ -45,11 +50,14 @@ namespace AgentsRest.Services
                 {
                     agentModel.Coordinate_y++;
                 }
-            }
-            if (await CalcDistance(agentModel, targetModel) < 200)
-            {
-                context.Missions.RemoveAsync(missionModel);
-                await context.SaveChangesAsync();
+                if (agentModel.Coordinate_x > targetModel.Coordinate_x)
+                {
+                    agentModel.Coordinate_x--;
+                }
+                if (agentModel.Coordinate_y > targetModel.Coordinate_y)
+                {
+                    agentModel.Coordinate_y--;
+                }
             }
         }
     }
