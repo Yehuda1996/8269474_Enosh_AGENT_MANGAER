@@ -66,6 +66,10 @@ namespace AgentsRest.Services
             });
             target.Coordinate_x += x;
             target.Coordinate_y += y;
+            if (target.Coordinate_x < 0 || target.Coordinate_x > 1000 || target.Coordinate_y > 1000 || target.Coordinate_y < 0)
+            {
+                throw new Exception("One or more coordinates are out of range!!!");
+            }
             await context.Targets.AddAsync(target);
             await context.SaveChangesAsync();
         }

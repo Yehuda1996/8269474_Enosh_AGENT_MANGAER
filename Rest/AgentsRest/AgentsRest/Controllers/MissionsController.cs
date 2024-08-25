@@ -31,5 +31,6 @@ namespace AgentsRest.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult> GetAllMissions() =>
             Ok(await missionService.GetAllMissionsAsync());
+
     }
 }

@@ -1,5 +1,6 @@
 ﻿using AgentsRest.Dto;
 using AgentsRest.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,12 +8,13 @@ namespace AgentsRest.Controllers
 {
     [Route("[controller]")]
     [ApiController]
-    public class TargetsController(ITargetService targetService) : ControllerBase
+    [Authorize]
+    public class TargetsController(ITargetService targetService, IJwtService jwtService) : ControllerBase
     {
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult<int>> CreateAgent(TargetDto targetDto)
+        public async Task<ActionResult<int>> CreateAgent([FromBody] TargetDto targetDto)
         {
             try
             {
@@ -40,7 +42,7 @@ namespace AgentsRest.Controllers
         [HttpPut("{id}/pin")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult> PutInitialCoordinatesForTarget(int id, CoordinatesDto coordinatesDto)
+        public async Task<ActionResult> PutInitialCoordinatesForTarget(int id, [FromBody] CoordinatesDto coordinatesDto)
         {
             try
             {
@@ -56,7 +58,7 @@ namespace AgentsRest.Controllers
         [HttpPut("{id}/move")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult> MoveTarget(int id, MoveDto moveDto)
+        public async Task<ActionResult> MoveTarget(int id,[FromBody] MoveDto moveDto)
         {
             try
             {
