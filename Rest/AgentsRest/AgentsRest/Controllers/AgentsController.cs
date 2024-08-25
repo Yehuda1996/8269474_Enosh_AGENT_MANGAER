@@ -31,6 +31,12 @@ namespace AgentsRest.Controllers
         public async Task<ActionResult> GetAgent(int id) =>
             Ok(await agentService.GetAgentByIdAsync(id));
 
+        [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<ActionResult> GetAllAgents() =>
+            Ok(await agentService.GetAllAgentsAsync());
+
         [HttpPut("{id}/pin")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]

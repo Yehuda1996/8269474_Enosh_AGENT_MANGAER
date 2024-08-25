@@ -7,6 +7,7 @@ namespace AgentsRest.Services
     {
         public Task<AgentModel> CreateAgentAsync(AgentDto agent);
         public Task<AgentModel> GetAgentByIdAsync(int id);
+        public Task<List<AgentModel>> GetAllAgentsAsync();
         public Task StartingCoordinatesForAgentByIdAsync(int id, CoordinatesDto coordinatesDto);
         public Task MoveAgentById(int id, MoveDto moveDto);
     }

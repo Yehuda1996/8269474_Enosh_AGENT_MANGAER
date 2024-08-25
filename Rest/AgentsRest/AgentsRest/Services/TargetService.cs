@@ -11,9 +11,9 @@ namespace AgentsRest.Services
         {
             TargetModel newTarget = new()
             {
-                Name = target.Name,
-                Position = target.Position,
-                Image = target.PhotoUrl,
+                Name = target.name,
+                Position = target.position,
+                Image = target.photoUrl,
             };
             await context.Targets.AddAsync(newTarget);
             await context.SaveChangesAsync();
@@ -22,6 +22,9 @@ namespace AgentsRest.Services
 
         public async Task<TargetModel?> GetTargetByIdAsync(int id) =>
             await context.Targets.FirstOrDefaultAsync(x => x.Id == id);
+
+        public async Task<List<TargetModel>> GetAllTargetsAsync() =>
+            await context.Targets.ToListAsync();
 
         public async Task StartingCoordinatesForTargetByIdAsync(int id, CoordinatesDto coordinatesDto)
         {

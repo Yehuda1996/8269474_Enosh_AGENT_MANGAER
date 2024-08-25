@@ -12,8 +12,8 @@ namespace AgentsRest.Services
         {
             AgentModel newAgent = new()
             {
-                Nickname = agent.Nickname,
-                Image = agent.PhotoUrl
+                Nickname = agent.nickname,
+                Image = agent.photoUrl
             };
             await context.Agents.AddAsync(newAgent);
             await context.SaveChangesAsync();
@@ -23,6 +23,9 @@ namespace AgentsRest.Services
 
         public async Task<AgentModel?> GetAgentByIdAsync(int id) =>
             await context.Agents.FirstOrDefaultAsync(x => x.Id == id);
+
+        public async Task<List<AgentModel>> GetAllAgentsAsync() =>
+            await context.Agents.ToListAsync();
 
 
         public async Task StartingCoordinatesForAgentByIdAsync(int id, CoordinatesDto coordinatesDto)
