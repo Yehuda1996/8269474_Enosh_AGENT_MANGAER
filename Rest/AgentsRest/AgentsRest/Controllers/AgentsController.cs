@@ -73,6 +73,6 @@ namespace AgentsRest.Controllers
 
         [HttpDelete("{id}")]
         public async Task<ActionResult> DeleteAgent(int id) =>
-            Ok(await agentService.DeleteAgentByIdAsync(id));
+            Ok(agentService.DeleteAgentByIdAsync(id));
     }
 }

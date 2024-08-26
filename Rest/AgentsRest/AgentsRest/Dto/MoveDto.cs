@@ -2,6 +2,6 @@
 {
     public class MoveDto
     {
-        public string Direction { get; set; }
+        public string Direction { get; set; } = string.Empty;
     }
 }

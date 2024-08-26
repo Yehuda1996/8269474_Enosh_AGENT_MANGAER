@@ -21,7 +21,8 @@ namespace AgentsRest.Services
         }
 
         public async Task<TargetModel?> GetTargetByIdAsync(int id) =>
-            await context.Targets.FirstOrDefaultAsync(x => x.Id == id);
+            await context.Targets.FirstOrDefaultAsync(x => x.Id == id)
+            ?? throw new Exception($"There is no target by the id {id}");
 
         public async Task<List<TargetModel>> GetAllTargetsAsync() =>
             await context.Targets.ToListAsync();
@@ -29,7 +30,7 @@ namespace AgentsRest.Services
         public async Task StartingCoordinatesForTargetByIdAsync(int id, CoordinatesDto coordinatesDto)
         {
             var target = await GetTargetByIdAsync(id);
-            if (target.Id != id)
+            if (target == null)
             {
                 throw new Exception($"There is no target with the id of {id}");
             }
@@ -39,7 +40,7 @@ namespace AgentsRest.Services
             }
             target.Coordinate_x = coordinatesDto.x;
             target.Coordinate_y = coordinatesDto.y;
-            await context.Targets.AddAsync(target);
+            context.Targets.Update(target);
             await context.SaveChangesAsync();
         }
 
@@ -70,14 +71,18 @@ namespace AgentsRest.Services
             {
                 throw new Exception("One or more coordinates are out of range!!!");
             }
-            await context.Targets.AddAsync(target);
+            context.Targets.Update(target);
             await context.SaveChangesAsync();
         }
 
         public async Task DeleteTargetByIdAsync(int id)
         {
             var deleteTarget = await GetTargetByIdAsync(id);
-            await context.Targets.RemoveAsync(deleteTarget);
+            if (deleteTarget == null)
+            {
+                throw new Exception($"There is no target by the id {id}");
+            }
+            context.Targets.Remove(deleteTarget);
             await context.SaveChangesAsync();
         }
     }

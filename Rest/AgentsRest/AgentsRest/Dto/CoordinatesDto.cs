@@ -2,7 +2,7 @@
 {
     public class CoordinatesDto
     {
-        public int x { get; set; }
-        public int y { get; set; }
+        public int x { get; set; } = -1;
+        public int y { get; set; } = -1;
     }
 }
