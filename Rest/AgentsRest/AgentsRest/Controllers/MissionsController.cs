@@ -13,11 +13,11 @@ namespace AgentsRest.Controllers
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult> CreateMission(MissionDto missionDto, AgentModel agentModel, TargetModel targetModel)
+        public async Task<ActionResult> CreateMission(MissionDto missionDto)
         {
             try
             {
-                var newMission = await missionService.CreateMissionAsync(missionDto, agentModel, targetModel);
+                var newMission = await missionService.CreateMissionAsync(missionDto);
                 return Created();
             }
             catch (Exception ex)

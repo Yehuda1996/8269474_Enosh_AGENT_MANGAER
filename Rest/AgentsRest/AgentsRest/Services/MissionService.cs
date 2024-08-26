@@ -5,11 +5,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AgentsRest.Services
 {
-    public class MissionService(ApplicationDbContext context, IAgentService agentService, IMissionService missionService) : IMissionService
-    {
-
-        public async Task<MissionModel> CreateMissionAsync(MissionDto missionDto, AgentModel agentModel, TargetModel targetModel)
+    public class MissionService(ApplicationDbContext context) : IMissionService
+    { 
+        public async Task<MissionModel> CreateMissionAsync(MissionDto missionDto)
         {
+            AgentModel agentModel = null;
+            TargetModel targetModel = null;
             if (await CalcDistance(agentModel, targetModel) < 200)
             {
                 MissionModel newMission = new()
@@ -36,7 +37,7 @@ namespace AgentsRest.Services
 
         public async Task<MissionModel> UpdateMissionStatusAsync(int id, MissionModel missionModel)
         {
-            var statusUpdate =  await missionService.GetMissionById(id);
+            var statusUpdate =  await GetMissionById(id);
             if (statusUpdate == null)
             {
                 throw new Exception($"There is no mission with the id of {id}");
@@ -88,6 +89,7 @@ namespace AgentsRest.Services
                 {
                     targetModel.Status = TargetStatus.Eliminated;
                     missionModel.Status = MissionStatus.Completed;
+                    agentModel.Status = AgentStatus.Inactive;
                 }
 
                 context.Agents.Update(agentModel);

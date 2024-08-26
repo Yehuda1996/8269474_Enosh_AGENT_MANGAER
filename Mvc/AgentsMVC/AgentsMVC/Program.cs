@@ -1,3 +1,6 @@
+using System.Net;
+using AgentsMVC.Models;
+
 namespace AgentsMVC
 {
     public class Program
@@ -8,6 +11,8 @@ namespace AgentsMVC
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddHttpClient();
+            builder.Services.AddSingleton<Authentication>();
 
             var app = builder.Build();
 
