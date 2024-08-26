@@ -26,12 +26,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\yehudag\source\repos\AgentsExam\Mvc\AgentsMVC\AgentsMVC
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/yehudag/source/repos/AgentsExam/Mvc/AgentsMVC/AgentsMVC/Views/Agents/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbnRzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/yehudag/source/repos/AgentsExam/Mvc/AgentsMVC/AgentsMVC/Views/Agents/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbnRzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/yehudag/source/repos/AgentsExam/Mvc/AgentsMVC/AgentsMVC/Views/Home/AuthError.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBdXRoRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/yehudag/source/repos/AgentsExam/Mvc/AgentsMVC/AgentsMVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yehudag/source/repos/AgentsExam/Mvc/AgentsMVC/AgentsMVC/Views/Home/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/yehudag/source/repos/AgentsExam/Mvc/AgentsMVC/AgentsMVC/Views/Home/Privacy.cshtml]
@@ -44,6 +56,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/yehudag/source/repos/AgentsExam/Mvc/AgentsMVC/AgentsMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yehudag/source/repos/AgentsExam/Mvc/AgentsMVC/AgentsMVC/Views/Target/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFyZ2V0XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yehudag/source/repos/AgentsExam/Mvc/AgentsMVC/AgentsMVC/Views/Target/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFyZ2V0XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/yehudag/source/repos/AgentsExam/Mvc/AgentsMVC/AgentsMVC/Views/_ViewImports.cshtml]

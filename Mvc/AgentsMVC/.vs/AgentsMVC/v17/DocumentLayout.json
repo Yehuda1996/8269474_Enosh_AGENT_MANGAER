@@ -3,16 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\yehudag\\source\\repos\\AgentsExam\\Mvc\\AgentsMVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B3909998-3EED-48A9-AA90-E97CE5827420}|AgentsMVC\\AgentsMVC.csproj|c:\\users\\yehudag\\source\\repos\\agentsexam\\mvc\\agentsmvc\\agentsmvc\\controllers\\targetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3909998-3EED-48A9-AA90-E97CE5827420}|AgentsMVC\\AgentsMVC.csproj|solutionrelative:agentsmvc\\controllers\\targetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B3909998-3EED-48A9-AA90-E97CE5827420}|AgentsMVC\\AgentsMVC.csproj|c:\\users\\yehudag\\source\\repos\\agentsexam\\mvc\\agentsmvc\\agentsmvc\\controllers\\agentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B3909998-3EED-48A9-AA90-E97CE5827420}|AgentsMVC\\AgentsMVC.csproj|solutionrelative:agentsmvc\\controllers\\agentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B3909998-3EED-48A9-AA90-E97CE5827420}|AgentsMVC\\AgentsMVC.csproj|c:\\users\\yehudag\\source\\repos\\agentsexam\\mvc\\agentsmvc\\agentsmvc\\views\\agents\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B3909998-3EED-48A9-AA90-E97CE5827420}|AgentsMVC\\AgentsMVC.csproj|solutionrelative:agentsmvc\\views\\agents\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3909998-3EED-48A9-AA90-E97CE5827420}|AgentsMVC\\AgentsMVC.csproj|c:\\users\\yehudag\\source\\repos\\agentsexam\\mvc\\agentsmvc\\agentsmvc\\views\\agents\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3909998-3EED-48A9-AA90-E97CE5827420}|AgentsMVC\\AgentsMVC.csproj|solutionrelative:agentsmvc\\views\\agents\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3909998-3EED-48A9-AA90-E97CE5827420}|AgentsMVC\\AgentsMVC.csproj|c:\\users\\yehudag\\source\\repos\\agentsexam\\mvc\\agentsmvc\\agentsmvc\\controllers\\targetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3909998-3EED-48A9-AA90-E97CE5827420}|AgentsMVC\\AgentsMVC.csproj|solutionrelative:agentsmvc\\controllers\\targetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3909998-3EED-48A9-AA90-E97CE5827420}|AgentsMVC\\AgentsMVC.csproj|c:\\users\\yehudag\\source\\repos\\agentsexam\\mvc\\agentsmvc\\agentsmvc\\views\\target\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3909998-3EED-48A9-AA90-E97CE5827420}|AgentsMVC\\AgentsMVC.csproj|solutionrelative:agentsmvc\\views\\target\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3909998-3EED-48A9-AA90-E97CE5827420}|AgentsMVC\\AgentsMVC.csproj|c:\\users\\yehudag\\source\\repos\\agentsexam\\mvc\\agentsmvc\\agentsmvc\\views\\target\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3909998-3EED-48A9-AA90-E97CE5827420}|AgentsMVC\\AgentsMVC.csproj|solutionrelative:agentsmvc\\views\\target\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3909998-3EED-48A9-AA90-E97CE5827420}|AgentsMVC\\AgentsMVC.csproj|c:\\users\\yehudag\\source\\repos\\agentsexam\\mvc\\agentsmvc\\agentsmvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3909998-3EED-48A9-AA90-E97CE5827420}|AgentsMVC\\AgentsMVC.csproj|solutionrelative:agentsmvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3909998-3EED-48A9-AA90-E97CE5827420}|AgentsMVC\\AgentsMVC.csproj|c:\\users\\yehudag\\source\\repos\\agentsexam\\mvc\\agentsmvc\\agentsmvc\\views\\home\\autherror.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3909998-3EED-48A9-AA90-E97CE5827420}|AgentsMVC\\AgentsMVC.csproj|solutionrelative:agentsmvc\\views\\home\\autherror.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3909998-3EED-48A9-AA90-E97CE5827420}|AgentsMVC\\AgentsMVC.csproj|c:\\users\\yehudag\\source\\repos\\agentsexam\\mvc\\agentsmvc\\agentsmvc\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3909998-3EED-48A9-AA90-E97CE5827420}|AgentsMVC\\AgentsMVC.csproj|solutionrelative:agentsmvc\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B3909998-3EED-48A9-AA90-E97CE5827420}|AgentsMVC\\AgentsMVC.csproj|c:\\users\\yehudag\\source\\repos\\agentsexam\\mvc\\agentsmvc\\agentsmvc\\dto\\missiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,50 +78,128 @@
       "DocumentGroups": [
         {
           "DockedWidth": 176,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\yehudag\\source\\repos\\AgentsExam\\Mvc\\AgentsMVC\\AgentsMVC\\Views\\Agents\\Details.cshtml",
+              "RelativeDocumentMoniker": "AgentsMVC\\Views\\Agents\\Details.cshtml",
+              "ToolTip": "C:\\Users\\yehudag\\source\\repos\\AgentsExam\\Mvc\\AgentsMVC\\AgentsMVC\\Views\\Agents\\Details.cshtml",
+              "RelativeToolTip": "AgentsMVC\\Views\\Agents\\Details.cshtml",
+              "ViewState": "AQIAAAIAAACUzMzMzIwjwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T11:53:14.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\yehudag\\source\\repos\\AgentsExam\\Mvc\\AgentsMVC\\AgentsMVC\\Views\\Target\\Details.cshtml",
+              "RelativeDocumentMoniker": "AgentsMVC\\Views\\Target\\Details.cshtml",
+              "ToolTip": "C:\\Users\\yehudag\\source\\repos\\AgentsExam\\Mvc\\AgentsMVC\\AgentsMVC\\Views\\Target\\Details.cshtml",
+              "RelativeToolTip": "AgentsMVC\\Views\\Target\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T11:47:58.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\yehudag\\source\\repos\\AgentsExam\\Mvc\\AgentsMVC\\AgentsMVC\\Views\\Home\\Login.cshtml",
+              "RelativeDocumentMoniker": "AgentsMVC\\Views\\Home\\Login.cshtml",
+              "ToolTip": "C:\\Users\\yehudag\\source\\repos\\AgentsExam\\Mvc\\AgentsMVC\\AgentsMVC\\Views\\Home\\Login.cshtml",
+              "RelativeToolTip": "AgentsMVC\\Views\\Home\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T11:20:58.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuthError.cshtml",
+              "DocumentMoniker": "C:\\Users\\yehudag\\source\\repos\\AgentsExam\\Mvc\\AgentsMVC\\AgentsMVC\\Views\\Home\\AuthError.cshtml",
+              "RelativeDocumentMoniker": "AgentsMVC\\Views\\Home\\AuthError.cshtml",
+              "ToolTip": "C:\\Users\\yehudag\\source\\repos\\AgentsExam\\Mvc\\AgentsMVC\\AgentsMVC\\Views\\Home\\AuthError.cshtml",
+              "RelativeToolTip": "AgentsMVC\\Views\\Home\\AuthError.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T11:19:04.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\yehudag\\source\\repos\\AgentsExam\\Mvc\\AgentsMVC\\AgentsMVC\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "AgentsMVC\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\yehudag\\source\\repos\\AgentsExam\\Mvc\\AgentsMVC\\AgentsMVC\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "AgentsMVC\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAoAAAAAMzMzM3MswCQAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T10:58:57.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\yehudag\\source\\repos\\AgentsExam\\Mvc\\AgentsMVC\\AgentsMVC\\Views\\Target\\Index.cshtml",
+              "RelativeDocumentMoniker": "AgentsMVC\\Views\\Target\\Index.cshtml",
+              "ToolTip": "C:\\Users\\yehudag\\source\\repos\\AgentsExam\\Mvc\\AgentsMVC\\AgentsMVC\\Views\\Target\\Index.cshtml",
+              "RelativeToolTip": "AgentsMVC\\Views\\Target\\Index.cshtml",
+              "ViewState": "AQIAACcAAAAAamZmZmYEwEAAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T10:57:35.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "TargetController.cs",
               "DocumentMoniker": "C:\\Users\\yehudag\\source\\repos\\AgentsExam\\Mvc\\AgentsMVC\\AgentsMVC\\Controllers\\TargetController.cs",
               "RelativeDocumentMoniker": "AgentsMVC\\Controllers\\TargetController.cs",
               "ToolTip": "C:\\Users\\yehudag\\source\\repos\\AgentsExam\\Mvc\\AgentsMVC\\AgentsMVC\\Controllers\\TargetController.cs",
               "RelativeToolTip": "AgentsMVC\\Controllers\\TargetController.cs",
-              "ViewState": "AQIAAAkAAADon5mZmZkqwAoAAAAIAAAA",
+              "ViewState": "AQIAACcAAACAAAAAAAAZwCMAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-26T09:27:30.988Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\yehudag\\source\\repos\\AgentsExam\\Mvc\\AgentsMVC\\AgentsMVC\\Views\\Agents\\Index.cshtml",
               "RelativeDocumentMoniker": "AgentsMVC\\Views\\Agents\\Index.cshtml",
               "ToolTip": "C:\\Users\\yehudag\\source\\repos\\AgentsExam\\Mvc\\AgentsMVC\\AgentsMVC\\Views\\Agents\\Index.cshtml",
               "RelativeToolTip": "AgentsMVC\\Views\\Agents\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAABoAAABgAAAAAAAhwDoAAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-26T09:27:00.444Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "AgentsController.cs",
               "DocumentMoniker": "C:\\Users\\yehudag\\source\\repos\\AgentsExam\\Mvc\\AgentsMVC\\AgentsMVC\\Controllers\\AgentsController.cs",
               "RelativeDocumentMoniker": "AgentsMVC\\Controllers\\AgentsController.cs",
               "ToolTip": "C:\\Users\\yehudag\\source\\repos\\AgentsExam\\Mvc\\AgentsMVC\\AgentsMVC\\Controllers\\AgentsController.cs",
               "RelativeToolTip": "AgentsMVC\\Controllers\\AgentsController.cs",
-              "ViewState": "AQIAAAYAAAAAOTMzMzPbvwoAAAArAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-26T08:53:15.824Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "MissionDto.cs",
               "DocumentMoniker": "C:\\Users\\yehudag\\source\\repos\\AgentsExam\\Mvc\\AgentsMVC\\AgentsMVC\\Dto\\MissionDto.cs",
               "RelativeDocumentMoniker": "AgentsMVC\\Dto\\MissionDto.cs",
@@ -105,12 +207,11 @@
               "RelativeToolTip": "AgentsMVC\\Dto\\MissionDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T08:16:27.131Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-26T08:16:27.131Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "TargetDto.cs",
               "DocumentMoniker": "C:\\Users\\yehudag\\source\\repos\\AgentsExam\\Mvc\\AgentsMVC\\AgentsMVC\\Dto\\TargetDto.cs",
               "RelativeDocumentMoniker": "AgentsMVC\\Dto\\TargetDto.cs",
@@ -118,12 +219,11 @@
               "RelativeToolTip": "AgentsMVC\\Dto\\TargetDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T08:15:56.09Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-26T08:15:56.09Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "AgentDto.cs",
               "DocumentMoniker": "C:\\Users\\yehudag\\source\\repos\\AgentsExam\\Mvc\\AgentsMVC\\AgentsMVC\\Dto\\AgentDto.cs",
               "RelativeDocumentMoniker": "AgentsMVC\\Dto\\AgentDto.cs",
@@ -131,12 +231,11 @@
               "RelativeToolTip": "AgentsMVC\\Dto\\AgentDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T08:15:04.149Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-26T08:15:04.149Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "MissionVM.cs",
               "DocumentMoniker": "C:\\Users\\yehudag\\source\\repos\\AgentsExam\\Mvc\\AgentsMVC\\AgentsMVC\\ViewModel\\MissionVM.cs",
               "RelativeDocumentMoniker": "AgentsMVC\\ViewModel\\MissionVM.cs",
@@ -149,7 +248,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "TargetVM.cs",
               "DocumentMoniker": "C:\\Users\\yehudag\\source\\repos\\AgentsExam\\Mvc\\AgentsMVC\\AgentsMVC\\ViewModel\\TargetVM.cs",
               "RelativeDocumentMoniker": "AgentsMVC\\ViewModel\\TargetVM.cs",
@@ -162,7 +261,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "AgentVM.cs",
               "DocumentMoniker": "C:\\Users\\yehudag\\source\\repos\\AgentsExam\\Mvc\\AgentsMVC\\AgentsMVC\\ViewModel\\AgentVM.cs",
               "RelativeDocumentMoniker": "AgentsMVC\\ViewModel\\AgentVM.cs",
@@ -170,12 +269,11 @@
               "RelativeToolTip": "AgentsMVC\\ViewModel\\AgentVM.cs",
               "ViewState": "AQIAAAQAAACIAQAAAAARwBEAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T07:44:03.844Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-26T07:44:03.844Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\yehudag\\source\\repos\\AgentsExam\\Mvc\\AgentsMVC\\AgentsMVC\\Program.cs",
               "RelativeDocumentMoniker": "AgentsMVC\\Program.cs",
@@ -183,12 +281,11 @@
               "RelativeToolTip": "AgentsMVC\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T07:40:13.189Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-26T07:40:13.189Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "Authentication.cs",
               "DocumentMoniker": "C:\\Users\\yehudag\\source\\repos\\AgentsExam\\Mvc\\AgentsMVC\\AgentsMVC\\Models\\Authentication.cs",
               "RelativeDocumentMoniker": "AgentsMVC\\Models\\Authentication.cs",
@@ -196,8 +293,7 @@
               "RelativeToolTip": "AgentsMVC\\Models\\Authentication.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T07:39:42.463Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-26T07:39:42.463Z"
             }
           ]
         }

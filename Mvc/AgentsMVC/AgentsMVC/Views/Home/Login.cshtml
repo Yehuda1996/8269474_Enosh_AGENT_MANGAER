@@ -1,0 +1,5 @@
+﻿<form asp-action="Login" method="post">
+	@Html.AntiForgeryToken()
+	<input type="name" name="Name" placeholder="Name" />
+	<input type="submit" value="Login" />
+</form>

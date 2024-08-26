@@ -14,7 +14,7 @@ namespace AgentsRest.Controllers
             "SimulationServer", "MVCServer"
         ];
 
-        [HttpPost]
+        [HttpPost("auth")]
         public ActionResult<string> Login([FromBody] LoginDto loginDto) =>
             _allowedNames.Contains(loginDto.Name)
             ?Ok(jwtService.CreateToken(loginDto.Name))
