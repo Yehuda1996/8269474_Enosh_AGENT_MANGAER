@@ -5,12 +5,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AgentsRest.Services
 {
-    public class MissionService(ApplicationDbContext context) : IMissionService
+    public class MissionService(ApplicationDbContext context, AgentModel agentModel, TargetModel targetModel) : IMissionService
     { 
         public async Task<MissionModel> CreateMissionAsync(MissionDto missionDto)
         {
-            AgentModel agentModel = null;
-            TargetModel targetModel = null;
             if (await CalcDistance(agentModel, targetModel) < 200)
             {
                 MissionModel newMission = new()
@@ -73,7 +71,8 @@ namespace AgentsRest.Services
             {
                 mission.Status = MissionStatus.Assigned;
                 mission.TimeOfMission = DateTime.Now;
-
+                // moving the agent towards the target by subtracting the coordinates and then by seeing the difference
+                //moving the agent acoordingly
                 double direction_x = targetModel.Coordinate_x - agentModel.Coordinate_x;
                 double direction_y = targetModel.Coordinate_y - agentModel.Coordinate_y;
 

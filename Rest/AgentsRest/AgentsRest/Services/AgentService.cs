@@ -40,12 +40,17 @@ namespace AgentsRest.Services
             {
                 throw new Exception("One or more coordinates are out of range!!!");
             }
+            //making sure that starting points and movement are in range placement
             agent.Coordinate_x = coordinatesDto.x;
             agent.Coordinate_y = coordinatesDto.y;
-            context.Agents.Update(agent);
+			if (agent.Coordinate_x < 0 || agent.Coordinate_x > 1000 || agent.Coordinate_y > 1000 || agent.Coordinate_y < 0)
+			{
+				throw new Exception("One or more coordinates are out of range!!!");
+			}
+			context.Agents.Update(agent);
             await context.SaveChangesAsync();
         }
-
+        // creating a Dictionary to help determine direction and where to move to
         private readonly Dictionary<string, (int x, int y)> calcDirection = new()
         {
             {"n", (x: 0, y: 1) },
@@ -66,7 +71,8 @@ namespace AgentsRest.Services
                       x = x + agent.Coordinate_x,
                       y = y + agent.Coordinate_y
                   });
-            agent.Coordinate_x += x;
+            // will take the last coordinates and update them accordingly
+            agent.Coordinate_x += x; 
             agent.Coordinate_y += y;
             if (agent.Coordinate_x < 0 || agent.Coordinate_x > 1000 || agent.Coordinate_y > 1000 || agent.Coordinate_y < 0)
             {

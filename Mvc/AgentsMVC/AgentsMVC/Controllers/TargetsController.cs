@@ -8,7 +8,7 @@ using System.Text.Json;
 
 namespace AgentsMVC.Controllers
 {
-    public class TargetController(IHttpClientFactory clientFactory, Authentication auth) : Controller
+    public class TargetsController(IHttpClientFactory clientFactory, Authentication auth) : Controller
     {
         private readonly string baseUrl = "https://localhost:7270/Targets";
         public async Task<IActionResult> Index()

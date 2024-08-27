@@ -43,7 +43,7 @@ namespace AgentsRest.Services
             context.Targets.Update(target);
             await context.SaveChangesAsync();
         }
-
+        //see the comment by AgentsService
         private readonly Dictionary<string, (int x, int y)> calcDirection = new()
         {
             {"n", (x: 0, y: 1) },
