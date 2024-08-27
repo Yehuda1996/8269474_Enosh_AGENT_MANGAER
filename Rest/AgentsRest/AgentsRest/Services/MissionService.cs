@@ -5,9 +5,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AgentsRest.Services
 {
-    public class MissionService(ApplicationDbContext context, AgentModel agentModel, TargetModel targetModel) : IMissionService
-    { 
-        public async Task<MissionModel> CreateMissionAsync(MissionDto missionDto)
+    public class MissionService(ApplicationDbContext context) : IMissionService
+	{
+        AgentModel agentModel = null;
+        TargetModel targetModel = null;
+		public async Task<MissionModel> CreateMissionAsync(MissionDto missionDto)
         {
             if (await CalcDistance(agentModel, targetModel) < 200)
             {
